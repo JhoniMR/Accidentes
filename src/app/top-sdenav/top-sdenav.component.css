@@ -7,6 +7,47 @@
     left: 0;
     right: 0;
   }
+.example-toolbar{
+  background:rgba(0, 0, 0, 0.479);
+}
+.example-toolbar button {
+  color: blanchedalmond;
+}
+.example-toolbar h1{
+  color: blanchedalmond;
+}
+div{
+    background-color: rgb(27, 27, 27);
+  }
+   
+  .singin{
+    color: blanchedalmond;
+    
+  }
+  .perfil{
+    color: blanchedalmond;
+    margin-left: 1050px;
+    width: 30%;
+  }
+  .nav-link{
+    color: rgb(255, 255, 255);
+  }
+
+ .prueva{
+   color: blanchedalmond;
+   margin-left: 1250px; 
+ }
+
+
+
+
+     
+  .mat-sidenav{
+    width: 20%;
+  }
+  .desplaicono{
+    margin-right: 10px;
+  }
   
   .example-is-mobile .example-toolbar {
     position: fixed;

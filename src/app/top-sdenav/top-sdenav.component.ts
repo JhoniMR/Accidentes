@@ -12,11 +12,15 @@ export class TopSdenavComponent implements OnInit {
 
   //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 
-  fillerNav = [
-    {name: 'map', route: 'map', icon: 'home'},
-    {name: 'login', route: 'login', icon: 'accessibility'}
+  fillerNavf = [
+    {name: 'perfil', route: 'login', icon: 'account_circle'}
   ];
 
+  fillerNav = [
+    {name: 'map', route: 'map', icon: 'home'},
+    {name: 'login', route: 'login', icon: 'accessibility'},
+  ];
+  
   fillerContent = Array.from({length: 50}, () =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
