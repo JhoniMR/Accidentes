@@ -2,14 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { TopSdenavComponent } from './top-sdenav/top-sdenav.component';
 import { MapComponent } from './map/map.component';
+import { GraficasComponent } from './graficas/graficas.component';
+import { FeedComponent } from './feed/feed.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import {DragDropModule} from '@angular/cdk/drag-drop';
@@ -56,12 +57,15 @@ import {MatTreeModule} from '@angular/material/tree';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     TopSdenavComponent,
     MapComponent,
+    GraficasComponent,
+    FeedComponent,
   ],
   imports: [
     BrowserModule,

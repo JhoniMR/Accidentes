@@ -10,17 +10,16 @@ export class TopSdenavComponent implements OnInit {
 
   mobileQuery: MediaQueryList;
 
-  //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
-
   fillerNavf = [
     {name: 'perfil', route: 'login', icon: 'account_circle'}
   ];
 
   fillerNav = [
-    {name: 'map', route: 'map', icon: 'home'},
-    {name: 'login', route: 'login', icon: 'accessibility'},
+    {name: 'Home', route: 'feed', icon: 'home'},
+    {name: 'map', route: 'map', icon: 'map'},
+    {name: 'graficas', route: 'graficas', icon: 'trending_up'}
   ];
-  
+
   fillerContent = Array.from({length: 50}, () =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
