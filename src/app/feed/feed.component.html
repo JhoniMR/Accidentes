@@ -1,2 +1,149 @@
-<h1>Hola Feed</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio temporibus vel. Molestiae veritatis dolorem natus ducimus, deleniti dolor labore nam laudantium autem aliquid ipsum enim asperiores. Adipisci, repellat placeat.</p>
+<ngb-carousel>
+    <ng-template *ngFor="let pelicula of peliculas" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="{{pelicula.img}}" width="1400" height="400" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{pelicula.name}}</h3>
+        <p>{{pelicula.desc}}</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">VILLAVICENCIO, TERCERA CIUDAD DEL PAÍS CON MENOS VÍCTIMAS EN ACCIDENTES DE TRÁNSITO
+      <small>16/08/2019</small>
+    </h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-6">
+        <img class="img-fluid" src="../../assets/img/2019.jpg" alt="">
+      </div>
+  
+      <div class="col-md-4">
+        <p ALIGN="justify">Gracias a las estrategias de sensibilización adelantadas por el Gobierno 'Unidos Podemos' a través de la Secretaría de Movilidad de Villavicencio, las cifras de víctimas fatales por siniestros viales se redujeron en un 15 por ciento.
+           Así lo confirmó Jimena Rivera, asesora para temas de seguridad vial, asesora de la Secretaría de Movilidad del municipio, quien explicó que según el informe presentado por la Agencia Nacional de Seguridad Vial, Villavicencio ocupó el tercer puesto a nivel nacional en reducción de muertes en accidentes de tránsito.
+           "Hemos logrado estos resultados gracias a las jornadas de pacificación, sensibilización y controles viales, nos han llevado a tener menos muertes en las vías de nuestra ciudad", explicó la funcionaria.
+           De acuerdo con el informe, durante el primer semestre del 2018 se presentaron 58 muertes, mientras que en lo corrido del presente año se han registrado 43 muertes por siniestros viales, convirtiéndose en un resultado alentador en materia de seguridad vial. </p>
+
+           <a href="www.alcaldiavillavicencio.gov.co">www.alcaldiavillavicencio.gov.co</a>
+        </div>
+  
+    </div>
+    <!-- /.row -->
+
+    <h3 class="my-5"></h3>
+
+    
+
+ <!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4">Page Heading
+      <small>Secondary Text</small>
+    </h1>
+  
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#ASDFG">Project One</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Two</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Three</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Four</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Five</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Six</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+      </li>
+    </ul>
+  
+  </div>
+  <!-- /.container -->   

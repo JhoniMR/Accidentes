@@ -1,9 +1,10 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
   <mat-toolbar class="example-toolbar">
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-    <h1 class="example-app-name">Responsive App</h1>    
+    <h1 class="example-app-name">Accidentes Villavicencio</h1>    
    <!-- <a mat-list-item [routerLink]="nav.route" *ngFor="let nav of perfil">-->
     <mat-nav-list>
       <a mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNavf">
@@ -29,6 +30,14 @@
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
+  <footer id="sticky-footer" class="py-3 text-white-50">
+    <div class="container text-center">
+      <small> Corporacion Autonoma  &copy; De Nariño Villavicencio</small>
+    </div>
+  </footer>
+
 </div>
 
 <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+
