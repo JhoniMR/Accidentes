@@ -57,6 +57,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 
 
+import { AgmCoreModule } from '@agm/core';
+import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
 
 
 
@@ -121,7 +123,12 @@ import {MatTreeModule} from '@angular/material/tree';
     ScrollingModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDNxDoNDI4wbPQAqs4eTqQWhE2DLAs7af8'
+    }),
+    AgmJsMarkerClustererModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
