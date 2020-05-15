@@ -1,3 +1,15 @@
 agm-map {
     height: 500px;
+    z-index: -1;
+  }
+  .info-tweets{
+    bottom: 0;
+    z-index: 3;
+    position: absolute;
+    background: gray;
+    width:100%;
+  }
+
+  .tweets{
+    margin-bottom: 10px;
   }

@@ -58,7 +58,8 @@ import {MatTreeModule} from '@angular/material/tree';
 
 
 import { AgmCoreModule } from '@agm/core';
-import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
+
+
 
 
 
@@ -126,8 +127,7 @@ import { AgmJsMarkerClustererModule } from '@agm/js-marker-clusterer';
     NgbAlertModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDNxDoNDI4wbPQAqs4eTqQWhE2DLAs7af8'
-    }),
-    AgmJsMarkerClustererModule
+    })
     
   ],
   providers: [],
