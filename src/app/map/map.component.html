@@ -4,7 +4,7 @@
      
   </div>-->
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" >
-  <div  *ngFor="let location of locations; let i = index">
+  <div  *ngFor="let location of Arraccidentes; let i = index">
     <div *ngIf="location.tipo=='carro'">
     <agm-marker 
       [latitude]="location.lat" 

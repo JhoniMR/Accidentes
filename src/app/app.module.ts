@@ -58,6 +58,10 @@ import {MatTreeModule} from '@angular/material/tree';
 
 
 import { AgmCoreModule } from '@agm/core';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { firebaseConfig } from '../environments/environment';
+
 
 
 
@@ -127,7 +131,9 @@ import { AgmCoreModule } from '@agm/core';
     NgbAlertModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDNxDoNDI4wbPQAqs4eTqQWhE2DLAs7af8'
-    })
+    }),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
     
   ],
   providers: [],

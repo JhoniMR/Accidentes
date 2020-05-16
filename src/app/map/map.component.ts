@@ -2,6 +2,9 @@
 //import MarkerClusterer from '@google/markerclusterer';
 import * as MarkerClusterer from "@google/markerclusterer"*/
 import { Component, OnInit } from "@angular/core";
+import { AccidentesService } from '../services/accidentes.service';
+
+/*
 interface marker {
 	lat: number;
   lng: number;
@@ -9,13 +12,10 @@ interface marker {
   tipo: string;
   text: string;
   img:string;
-
-
 //	label?: string;
 	//draggable: boolean;
-}
+}*/
 
-declare var google: any;
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -24,13 +24,10 @@ declare var google: any;
 
 export class MapComponent implements OnInit {
 
-  public show:boolean = false;
-  public buttonName:any = 'Show';
-
   lat = 4.1420002;
   lng = -73.6266403;
   zoom = 12
-
+/*
   locations: marker [] =[
 
     {
@@ -160,15 +157,10 @@ export class MapComponent implements OnInit {
       texto:"Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       img: "../../assets/img/buildings.jpg"
     }
-
-
-
-  ]
-
-
-
-
-  labelOptions={
+  ]*/
+  
+  labelOptions=
+  {
     color:'#ee4646',
     fontFamily:'',
     //text:''
@@ -176,6 +168,12 @@ export class MapComponent implements OnInit {
   icon1 = { url: '../../assets/map/car.svg', scaledSize: {height: 40, width: 40}}
   icon2 = { url: '../../assets/map/mot.svg', scaledSize: {height: 40, width: 40}}
 
+
+
+
+  //////// MOSTRAR Y OCULTAR BARRA INFERIROS
+  public show:boolean = false;
+  public buttonName:any = 'Show';
   clickedMarker(tipo: string, index: number) {
     //alert(`clicked the marker: ${tipo || index}`)
     this.show = !this.show;
@@ -186,12 +184,21 @@ export class MapComponent implements OnInit {
     else
       this.buttonName = "Show";
   }
- 
-  constructor(){
-  }
 
+ 
+
+
+  //ACCIDENTES
+  public Arraccidentes :any = [];
+
+  constructor(
+    public accidentesservice : AccidentesService,
+  ){}
+  
   ngOnInit(): void {
-    
+    this.accidentesservice.getAccidentes().subscribe( accidentes => {
+      this.Arraccidentes= accidentes;
+    })
   }
   
 }

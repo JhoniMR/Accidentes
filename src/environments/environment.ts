@@ -5,6 +5,16 @@
 export const environment = {
   production: false
 };
+export const firebaseConfig = {
+  apiKey: "AIzaSyDDCmYKSAyuduT6TPbqcDwenaDVK2bEpAo",
+  authDomain: "accidentes-villavicencio.firebaseapp.com",
+  databaseURL: "https://accidentes-villavicencio.firebaseio.com",
+  projectId: "accidentes-villavicencio",
+  storageBucket: "accidentes-villavicencio.appspot.com",
+  messagingSenderId: "1036654035255",
+  appId: "1:1036654035255:web:a2584dc6edaa7ffda01ab2",
+  measurementId: "G-V140KPBLMX"
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
