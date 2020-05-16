@@ -135,7 +135,7 @@ export class MapComponent implements OnInit {
       img:"../../assets/img/people.jpg"
     },
 
-  ]
+  ]*/
   tweets =[
     {
       titulo:"Acidente",
@@ -157,7 +157,7 @@ export class MapComponent implements OnInit {
       texto:"Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       img: "../../assets/img/buildings.jpg"
     }
-  ]*/
+  ]
   
   labelOptions=
   {
